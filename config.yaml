@@ -1,0 +1,12 @@
+local:
+  name: local_docker_cluster
+  description: "SkyPilot Local Cluster on Docker"
+  nodes:
+    - hostname: node1
+      username: root
+      ssh_key_path: ~/.ssh/skypilot_key
+    - hostname: node2
+      username: root
+      ssh_key_path: ~/.ssh/skypilot_key
+
+

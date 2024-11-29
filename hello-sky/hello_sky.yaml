@@ -1,0 +1,11 @@
+resources:
+  cloud: aws
+  accelerators: V100:1
+
+workdir: .
+setup: |
+  echo "Running setup"
+
+run: |
+  echo "Hello sky"
+

@@ -1,0 +1,10 @@
+resources:
+  image_id: docker:mudasirkhan21/my-python-app:latest
+  accelerators: V100:1  # Request one V100 GPU for the job (optional)
+  cloud: azure  # SkyPilot will automatically select the most cost-effective cloud provider (AWS, GCP, Azure, etc.)
+
+    #docker_image: mudasirkhan21/my-python-app:latest  # Docker image to run (replace with your Docker Hub username)
+
+run: |
+  python train.py  # Command to run the Python program inside the container
+
